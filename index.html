@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper,
+    body {
+        background: #2d2013;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        margin: auto;
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .wrapper {
+        width: 95%;
+        margin: auto;
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .title {
+        text-decoration: underline;
+    }
+
+    .search {
+        margin: auto;
+    }
+
+    #search {
+        width: 500px;
+        height: 45px;
+        border-radius: 10px;
+        border: 3px solid grey;
+    }
+
+    .recipeBox {
+        margin: 1px;
+    }
+
+    .box {
+        display: inline-block;
+        width: 200px;
+        height: 150px;
+        background-color: aquamarine;
+        border: 5px solid white;
+        margin: 10px;
+        padding: 5px;
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <h1 class="title">Meal Finder</h1>
+        <h2>Find any recipe</h2>
+        <hr>
+    </header>
+    <!-- <nav>
+        <a href="#">Github</a>
+    </nav> -->
+    <div class="wrapper">
+        <div class="search">
+            <input type="text" id='search' value="soup">
+            <button onclick="searchRecipe()" type="submit">Find</button>
+            <button onclick="searchRandom()" type="submit">random</button>
+            <div id="result-heading"></div>
+            <div id="meals" class="meals"></div>
+
+            <div class="recipeBox">
+                <div class="row" id="row">
+
+
+                </div>
+
+            </div>
+
+            <div class="recipeBox">
+                <div class="row" id="row">
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- <div id="result-heading"></div>
+    <div id="meals" class="meals"></div>
+    <div id="single-meal"></div>
+    </div> -->
+        <footer>&copy; 2020 Made by ramsha</footer>
+
+</body>
+<script src=" app.js"></script>
+
+</html>
